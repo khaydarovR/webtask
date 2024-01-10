@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 30px;
+    padding: 30px;
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    width: 31%; /* Ширина каждого квадрата */
+    height: 360px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+
+.container > div > h3{
+    font-size: xx-large;
+}
+
+
+.bat {
+    display: flex;
+    align-items: center;
+}
+
+.p-b {
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: 3px solid black;
+}
+
+.progress {
+    width: 80%;
+    height: 100%;
+    background-color: green;
+}
+
+.end {
+    border: 3px solid black;
+    height: 10px;
+}
+
+.text {
+    padding-left: 10%;
+    color: white;
+}
+
+/* 2  */  
+.greenblock {
+    background-color: green;
+    height: 70px;
+    width: 300px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  
+.g-back {
+    position: relative;
+    background-color: green;
+    height: 50px;
+    z-index: 0;
+    width: 320px;
+    margin: 0 auto;
+    top: 60px; /* Высота первого прямоугольника + отступ */
+}
+  
+
+
+
+/* 3  */  
+.convex-button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .web20-button {
+    background-color: #0066cc;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom, #def2ff, #010e1b);
+  }
+  
+  .web20-button:hover {
+    background-image: linear-gradient(to bottom, #004c99, #f2faff);
+  }
+
+  .inset-button {
+    background-color: #0066cc;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.2), 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inset-button:hover {
+    box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.4), 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+/* 15  */  
+.checked {
+    color: greenyellow;
+}
+
+.invalid {
+    color: red;
+}
+
+
+/* 16 */
+.square-frame {
+    width: 200px;
+    height: 200px;
+    border: 8px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .square-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* 18 */
+table {
+    border-collapse: collapse;
+    height: 200px;
+    width: 200px;
+    font-size: xx-small;
+}
+
+table tr:first-child td {
+    border: none;
+}
+
+table td {
+    border: 1px solid black;
+    max-width: 6px;
+    max-height: 6px;
+    min-height: auto;
+    min-width: auto;
+}
+
+table td:first-child {
+    border: none;
+}
+  
+/* 19 */
+.navbut {
+    background-color: orange;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbut a {
+    margin: 10px;
+    color: white;
+    
+}
+
+.navblock {
+    height: 30px;
+    border-right: #803f03 solid 2px;
+    display: flex;
+    align-items: center;
+}
+
+/* 20 */
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.maket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border: whitesmoke solid 2px;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.day {
+    width: 100%;
+    background-color: aqua;
+}
+
+.date { 
+    display: flex;
+    justify-content: center;
+}
+
+/* 21 */
+.navbar {
+    border-radius: 10px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navLeft {
+    border-radius: 10px 0px 0px 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+
+.navRight {
+    margin: 10px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 800;
+}
+
+.navRight .small-btn {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: red;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.navRight .small-btn:first-child {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: greenyellow;
+}
+
+
+.counter {
+    margin: 0px 10px;
+}
