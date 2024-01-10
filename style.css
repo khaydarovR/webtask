@@ -276,3 +276,25 @@ table td:first-child {
 .counter {
     margin: 0px 10px;
 }
+
+
+/* 26 */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-group label {
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  .checkbox-group input[type="checkbox"]:checked + label {
+    background-color: greenyellow;
+  }
+  
+  .checkbox-group input[type="checkbox"]:checked + label::before {
+    content: "✔";
+    display: inline-block;
+    margin-right: 5px;
+}
